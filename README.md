@@ -7,6 +7,12 @@ Kotlin Spring Boot Starter
 This is an opiniated kotlin spring boot starter application 
 
 
+### Features
+
+* Sample kotlin rest services
+* Sample data seed using a rest service
+* Spring batch configuration
+
 ### Getting Started
 
 * Import this project using Spring Tool Suite (STS)
