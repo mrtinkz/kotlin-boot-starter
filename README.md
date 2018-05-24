@@ -17,9 +17,15 @@ This is an opiniated kotlin spring boot starter application
 
 * Import this project using Spring Tool Suite (STS)
 * Maven install
-* And run the KotlinApplication
+* And run the KotlinApplication.kt
 
 ### OR
 
-* run ./mvn from command line
+* run ./mvnw from command line
 * the starter comes with a postman collection to run some tests.
+
+
+### Pending
+* UI
+* test cases
+* etc
