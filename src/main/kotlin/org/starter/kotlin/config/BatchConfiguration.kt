@@ -54,7 +54,7 @@ open class BatchConfiguration {
 				.name("bookItemReader")
 				.resource(ClassPathResource("data/sample-data.csv"))
 				.delimited()
-				.names(arrayOf("title", "content", "author"))
+				.names("title", "content", "author")
 				.fieldSetMapper(getFieldSetMapper())
 				.build()
 	}

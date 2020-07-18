@@ -15,9 +15,10 @@ This is an opiniated kotlin spring boot starter application
 
 ### Getting Started
 
+* Runs fine in IntelliJ
 * Import this project using Spring Tool Suite (STS)
 * Maven install
-* And run the KotlinApplication.kt
+* Run the KotlinApplication.kt
 
 ### OR
 
