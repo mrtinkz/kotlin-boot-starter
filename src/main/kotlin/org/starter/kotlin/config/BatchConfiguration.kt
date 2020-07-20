@@ -55,7 +55,11 @@ open class BatchConfiguration {
 				.resource(ClassPathResource("data/sample-data.csv"))
 				.delimited()
 				.names("title", "content", "author")
-				.fieldSetMapper(getFieldSetMapper())
+				.fieldSetMapper(object:BeanWrapperFieldSetMapper<Book>() {
+					init{
+						setTargetType(Book::class.java)
+					}
+				})
 				.build()
 	}
 
@@ -94,12 +98,5 @@ open class BatchConfiguration {
                 .processor(processor())
                 .writer(writer(dataSource))
                 .build()
-	}
-	
-	// TODO must move this logic back into .fieldSetMapper()
-	private fun getFieldSetMapper(): BeanWrapperFieldSetMapper<Book> {
-		val mapper = BeanWrapperFieldSetMapper<Book>()
-		mapper.setTargetType(Book::class.java)
-		return mapper
 	}
 }
