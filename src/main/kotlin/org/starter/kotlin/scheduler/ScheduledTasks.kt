@@ -15,7 +15,7 @@ open class ScheduledTasks {
 
     private val dateFormat: SimpleDateFormat = SimpleDateFormat("HH:mm:ss")
 
-    @Scheduled(fixedRate = 5000)
+    @Scheduled(fixedRate = 30000)
     fun reportCurrentTime(): Unit {
         log.info("The time is now {}", dateFormat.format(Date()))
     }

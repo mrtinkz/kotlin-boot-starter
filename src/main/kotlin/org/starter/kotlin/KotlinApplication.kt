@@ -23,10 +23,8 @@ import org.starter.kotlin.model.Book
 */
 
 @SpringBootApplication
-@EnableAutoConfiguration
 @EnableTransactionManagement
 @EnableScheduling
-@Order
 @ComponentScan("org.starter.kotlin")
 open class KotlinApplication
 
